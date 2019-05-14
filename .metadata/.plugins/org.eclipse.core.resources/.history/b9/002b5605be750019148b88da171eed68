@@ -13,10 +13,7 @@ public class Main extends Applet implements Runnable{
 	
 	public static JFrame frame;
 	public static final Dimension SCREEN_SIZE = new Dimension(800,600);
-	public static final Dimension GAME_SIZE = new Dimension(400,300);
 	public static final String title = "Connect Four";
-	
-	public Image screen;
 	
 	
 	public static boolean isRunning;
@@ -44,39 +41,15 @@ public class Main extends Applet implements Runnable{
 	
 	public void init() {
 		
-		screen = createVolatileImage(GAME_SIZE.width, GAME_SIZE.height);
-		
 	}
 	public void start() {
 		init();
-		new Thread(this).start();
-		
-		
-	}
-	
-	public void tick() {
+		new Thread(this);
 		
 	}
-	
-	public void render() {
-		Graphics g = screen.getGraphics();
-		g.setColor(new Color(Color.GREEN));
-		g.fillRect(0,0,100,100);
-		
-		g = frame.getGraphics()
-		g.drawImage(screen, 0,0,800,600,0,0,400,300,null);
-		
-		g.dispose();
-		
-	}
-	
 	public void run() {
 		init();
 		while(isRunning) {
-			tick();
-			render();
-			try {Thread.sleep(50);}
-			catch (InterruptedException ie) {}
 			
 		}
 	}
