@@ -1,0 +1,54 @@
+package view;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.awt.Toolkit;
+
+public class board {
+
+	private JFrame frmConnectFour;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					board window = new board();
+					window.frmConnectFour.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public board() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmConnectFour = new JFrame();
+		frmConnectFour.setTitle("Connect Four");
+		frmConnectFour.setBackground(new Color(240, 240, 240));
+		frmConnectFour.setBounds(100, 100, 799, 600);
+		frmConnectFour.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\CompSci\\Desktop\\Untitled.png"));
+		frmConnectFour.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
+	}
+
+}

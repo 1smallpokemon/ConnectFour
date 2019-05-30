@@ -1,11 +1,13 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1554843829000
+codemix.announce.displayed=true
 codemix.dont.show.upsell.until=1557604975808
 configurationInstallLocation=/C\:/Users/CompSci/Desktop/
 eclipse.preferences.version=1
+elearning.dont.show.until=1559504811447
 iconcolormode=primary
-last.download.attempt.time=1556564929574
-lastConfiguration=1556565953883
+last.download.attempt.time=1559070337762
+lastConfiguration=1559242852890
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray

@@ -1,0 +1,29 @@
+package view;
+
+import java.applet.Applet;
+
+import javax.swing.*;
+
+public class Main extends Applet implements Runnable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Main(final String[] args) {
+		JFrame board = new JFrame("Connect Four");
+		
+		board.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		board.setVisible(true);
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>res/Untitled.png</name>
+			<type>1</type>
+			<location>C:/Users/CompSci/Desktop/Untitled.png</location>
+		</link>
+		<link>
+			<name>src/view/Untitled.png</name>
+			<type>1</type>
+			<location>C:/Users/CompSci/Desktop/Untitled.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
