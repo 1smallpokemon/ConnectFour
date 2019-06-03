@@ -25,5 +25,15 @@
 			<type>1</type>
 			<location>C:/Users/CompSci/Desktop/Untitled.png</location>
 		</link>
+		<link>
+			<name>src/view/red.png</name>
+			<type>1</type>
+			<location>C:/Users/CompSci/Desktop/red.png</location>
+		</link>
+		<link>
+			<name>src/view/yellow.png</name>
+			<type>1</type>
+			<location>C:/Users/CompSci/Desktop/yellow.png</location>
+		</link>
 	</linkedResources>
 </projectDescription>
