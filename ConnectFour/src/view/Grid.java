@@ -31,7 +31,7 @@ public class Grid
     public boolean addPiece(int x) {
     	for( int i = 0; i < grid.length;i++) {
     		if(grid[i][x].isUnplayed()) {
-    			setPiece(x,i);
+    			setPiece(i-1,x);
     			return true;
     		}
     			

@@ -28,7 +28,6 @@ public class Main extends Applet implements Runnable{
 	@SuppressWarnings("unused")
 	private static Grid grid = new Grid();
 	
-	private int x=0,y=0;
 	
 	
 	public static boolean isRunning = true	;
@@ -43,7 +42,7 @@ public class Main extends Applet implements Runnable{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.addMouseListener(new MouseAdapter() {
+		frame.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				addPiece(frame.getMousePosition().getX(),frame.getMousePosition().getY());
@@ -62,10 +61,16 @@ public class Main extends Applet implements Runnable{
 	
 	protected static void addPiece(double x2, double y2) {
 		// TODO Auto-generated method stub
-		x2 -= 50;
-		x2 %= 100;
+		System.out.println(x2);
+		System.out.println(y2);
+
 		
-		grid.addPiece(new Double(x2).intValue());
+		int x = new Double(x2).intValue();
+		x -= 50;
+		x = x / 100;
+		
+		System.out.println(x);
+		grid.addPiece(x);
 		grid.printStatus();
 	}
 
